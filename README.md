@@ -49,7 +49,7 @@ sudo firewall-cmd --list-all
 3. Configure Database
 
 ```
-$ mysql
+$ sudo mysql
 MariaDB > CREATE DATABASE ecomdb;
 MariaDB > show databases;
 MariaDB > CREATE USER 'ecomuser'@'localhost' IDENTIFIED BY 'ecompassword';
@@ -82,6 +82,7 @@ mysql < db-load-script.sql
 ```
 > Check that data is loaded
 ```
+sudo mysql
 MariaDB > clear
 MariaDB > show database;
 MariaDB > use ecomdb;
